@@ -1,0 +1,157 @@
+h3 {
+  @extend %small-bold;
+  color: $accent;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 100px 0 30px;
+}
+
+.face-lockup {
+  max-width: 780px;
+  @include display(flex);
+  margin: 0 auto;
+  @include align-items(center);
+  @include justify-content(space-between);
+
+  .face-img {
+    @include size(200px);
+    border-radius: 50%;
+    order: 3;
+  }
+
+  .icon-pencil {
+    height: 100px;
+    width: 100px;
+    order: 1;
+    border-radius: 50%;
+    background-color: $bgcolor;
+    path {
+      fill: $accent;
+    }
+  }
+
+  .icon-mouse {
+    height: 100px;
+    width: 100px;
+    order: 2;
+    border-radius: 50%;
+    background-color: $bgcolor;
+    path {
+      fill: $accent;
+    }
+  }
+
+  .icon-browser {
+    height: 100px;
+    width: 100px;
+    order: 4;
+    border-radius: 50%;
+    background-color: $bgcolor;
+    path {
+      fill: $accent;
+    }
+  }
+
+  .icon-video {
+    height: 100px;
+    width: 100px;
+    order: 5;
+    border-radius: 50%;
+    background-color: $bgcolor;
+    path {
+      fill: $accent;
+    }
+  }
+}
+
+.blurb {
+  max-width: 620px;
+  padding: 0 15px;
+  margin: 50px auto;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media screen and (max-width: 670px) {
+  .face-lockup{
+    display: block;
+    text-align: center;
+    div {
+      display: inline-block;
+    }
+    .face-img {
+      display: block;
+      margin: 0 auto 30px;
+    }
+    .icon {
+      margin: 12px;
+      svg {
+        height: 110px;
+      }
+    }
+  }
+  .skill-lockup {
+    .skill-unit {
+      margin: 0 auto;
+    }
+  }
+}
+
+.skill-lockup {
+  max-width: 700px;
+  margin: 100px auto;
+  color: #999;
+  @include clearfix;
+
+  .skill-unit {
+    width: 330px;
+    float: left;
+    margin-left: 10px;
+  }
+
+  .skill-icons {
+    font-size: 0;
+    margin: 2px 0 30px;
+    span {
+      display: inline-block;
+      @include size(14px);
+      background-color: $accent;
+      margin-right: 5px;
+      border-radius: 50%;
+      &:after {
+        content: '';
+        display: block;
+        @include size(10px);
+        margin: 2px;
+        background: #fff;
+        border-radius: 50%;
+      }
+    }
+      @for $i from 1 through 10 {
+      &.skill-#{$i} span:nth-child(n+#{$i+1}){
+        @extend %skill-color
+      }
+    }
+    }
+  }
+
+%skill-color {
+  background: $bgcolor;
+}
+
+@media screen and (max-width: 541px){
+  .skill-lockup {
+    width: 270px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .skill-unit {
+      max-width: 250px;
+
+    }
+}
+
+
+

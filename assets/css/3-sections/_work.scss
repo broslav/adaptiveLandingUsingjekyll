@@ -1,0 +1,144 @@
+.section-work {
+  overflow-x: hidden;
+}
+
+.work-belt {
+  width: 200%;
+  position: relative;
+  left: 0px;
+  @include transition(1s);
+
+}
+
+.work-wrap, .thumb-wrap {
+  width: 50%;
+  float: left;
+}
+
+.alt-section {
+  background: #e5eaee;
+  padding-bottom: 50px;
+}
+
+.thumb-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  @include clearfix;
+
+  .thumb-unit {
+    width: 25%;
+    display: block;
+    float: left;
+    background-image: url(../img/work/proj-1/thumb.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 16%;
+    overflow: hidden;
+    @include perspective(300);
+  }
+
+  .thumb-overlay {
+    @include position(absolute, 100% 0px null 0px);
+    height: 100%;
+    background: fade-out($accent, 0.1);
+    @include transition(500ms);
+    text-align: center;
+    display: flex;
+    @include justify-content(space-around);
+    @include align-items(center);
+    @include transform(rotateX(90deg));
+
+    strong {
+      display: block;
+      color: #ffffff;
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 24px;
+      //padding: 0 20px;
+      line-height: 1.2;
+      margin: 0 auto;
+    }
+  }
+
+}
+
+.thumb-unit:hover {
+  .thumb-overlay {
+    position: absolute;
+    top: 0%;
+    left: 0px;
+    right: 0px;
+    bottom: null;
+    @include transform(rotateX(0deg));
+  }
+}
+
+@media screen and (max-width: 750px){
+  .thumb-container {
+
+    .thumb-unit {
+      width: 50%;
+      padding-top: 30%;
+    }
+
+    .thumb-overlay {
+
+      strong {
+        font-size: 22px;
+
+      }
+    }
+  }
+}
+
+.work-container {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  display: none;
+
+  h4{
+    color: $accent;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .work-return {
+    @include size(40px);
+    cursor: pointer;
+    opacity: 0.5;
+    @include position(absolute, -4px null null -60px);
+
+    svg {
+      @include size(100px);
+      path {
+        fill: rgba(0,0,0,0.4);
+      }
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .work-container{
+    .work-return {
+      left: 0px;
+    }
+    h4{
+      margin-left: 60px;
+    }
+  }
+
+}

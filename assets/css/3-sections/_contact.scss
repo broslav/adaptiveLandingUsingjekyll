@@ -1,0 +1,60 @@
+.section-contact {
+  text-align: center;
+}
+
+.social-links {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  a {
+    display: block;
+    text-decoration: none;
+    background: $accent;
+    @include size(50px);
+    text-align: center;
+    line-height: 50px;
+    color:white;
+    border-radius: 50%;
+    font-size: 28px;
+    margin: 20px;
+    @include transition();
+    &:hover{
+      @include transform(scale(1.2));
+    }
+  }
+}
+
+.bar {
+  width: 250px;
+  height: 0px;
+  border-top: 4px solid $accent;
+  margin: 0 auto 70px;
+}
+
+.big-link {
+  display: inline-block;
+  font-size: 72px;
+  font-weight: 300;
+  color: $accent;
+  text-decoration: none;
+  line-height: 1;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .big-link {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .big-link {
+    font-size: 35px;
+  }
+}
