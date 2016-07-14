@@ -58,9 +58,9 @@
         <entry file="file://$PROJECT_DIR$/assets/js/functions.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.46975088">
-              <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+              <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
               <folding>
-                <element signature="e#3233#3363#0" expanded="true" />
+                <element signature="e#3211#3341#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -371,7 +371,13 @@
       <option name="project" value="LOCAL" />
       <updated>1468526379390</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added .gitignore file, some paths issues solved number6">
+      <created>1468526691574</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1468526691574</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -426,7 +432,8 @@
     <MESSAGE value="added .gitignore file, some paths issues solved number3" />
     <MESSAGE value="added .gitignore file, some paths issues solved number4" />
     <MESSAGE value="added .gitignore file, some paths issues solved number5" />
-    <option name="LAST_COMMIT_MESSAGE" value="added .gitignore file, some paths issues solved number5" />
+    <MESSAGE value="added .gitignore file, some paths issues solved number6" />
+    <option name="LAST_COMMIT_MESSAGE" value="added .gitignore file, some paths issues solved number6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -772,9 +779,9 @@
     <entry file="file://$PROJECT_DIR$/assets/js/functions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46975088">
-          <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+          <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
           <folding>
-            <element signature="e#3233#3363#0" expanded="true" />
+            <element signature="e#3211#3341#0" expanded="true" />
           </folding>
         </state>
       </provider>

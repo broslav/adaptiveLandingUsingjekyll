@@ -37,7 +37,6 @@ function workLoad(){
     $.ajaxSetup({cache: false});
     $('.thumb-unit').click(function (event){
         var $this = $(this),
-            keyCode =
             newFolder = $this.data('folder'),
             newTitle = $this.find('strong').text(),
             spinner = '<div class="loader">Loading...</div>',
